@@ -1,8 +1,8 @@
 {
   "manifest_version": 3,
   "name": "Credit Card Offer Claimer",
-  "version": "1.0.0",
-  "description": "Automatically accepts promotional offers from Chase (And hopefully more cards soon) automatically to help users make the most of their credit card.",
+  "version": "1.0.1",
+  "description": "Automatically accepts promotional offers from Chase and American Express automatically.",
   "icons": {
     "48": "images/icon48.png",
     "128": "images/icon128.png"
@@ -16,11 +16,20 @@
   "content_scripts": [
     {
       "js": [
-        "scripts/content.js"
+        "scripts/chase.js"
       ],
       "all_frames": true,
       "matches": [
         "https://secure08ea.chase.com/web/auth/dashboard/*"
+      ]
+    },
+    {
+      "js": [
+        "scripts/amex.js"
+      ],
+      "all_frames": true,
+      "matches": [
+        "https://global.americanexpress.com/offers/eligible*"
       ]
     }
   ]
