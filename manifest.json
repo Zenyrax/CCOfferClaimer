@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "Credit Card Offer Claimer",
   "version": "1.0.1",
-  "description": "Automatically accepts promotional offers from Chase and American Express automatically.",
+  "description": "Automatically accepts promotional offers from Chase and American Express.",
   "icons": {
     "48": "images/icon48.png",
     "128": "images/icon128.png"
